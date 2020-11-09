@@ -1,0 +1,12 @@
+version: '2'
+services:
+  app_jhdemo-postgresql:
+    image: postgres:12.3
+    # volumes:
+    #     - ~/volumes/jhipster/App_jhdemo/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=App_jhdemo
+      - POSTGRES_PASSWORD=
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - 5432:5432
